@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+</head>
+<body>
+	<a href="./new">Contribute to the conversation!</a>
+	<% for(let i=0; i < messages.length; i++) { %>
+		<h3><%=messages[i].user%><%=messages[i].added%></h3>
+		<p><%=messages[i].text%></p>
+	<% } %>
+</body>
+</html>
